@@ -5,3 +5,20 @@
     height: 170px;
     width: 200px;
 }
+.container1{
+    display: flex;
+}
+#cheese, #bbq, #meat{
+    margin: 65px;
+}
+#cheese{
+    height: 170px;
+    width: 200px;
+}
+#meat{
+    height: 170px;
+    width: 200px;
+}
+.container{
+    border: 3px solid black;
+}
