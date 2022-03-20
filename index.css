@@ -41,5 +41,23 @@
     width: 200px;
 }
 .form{
-    background-color: black;
+    background-color: whitesmoke;
+    width: 50%;
+    margin-left: 450px;
+}
+input{
+    width: 45%;
+}
+#btn{
+    background-color: aqua;
+    color: white;
+    font-size: 20px;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.form p{
+    text-align: center;
+    font-size: 25px;
 }

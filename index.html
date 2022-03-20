@@ -50,21 +50,38 @@
         <p>Crafted with our signature sauce and loaded <br> with real mozzarella cheese, pepperoni, sausage and beef</p>
     </div>
     </div>
+    
+    <div class="form">
+      <p>Order pizza you like from our site and we will deliver at your doorstep</p>
     <form id="form" >
       <label for="select">Select Your Crust</label>
       <select class="browser-default custom-select custom-select-md mb-3 name">
-        <option value="crust">Crispy</option>
-        <option value="crust">Stuffed</option>
-        <option value="crust">Gluten-Free</option>
+        <option value="Crispy">Crispy --650</option>
+        <option value="Stuffed">Stuffed  --550</option>
+        <option value="Gluten-Free">Gluten-Free   --450</option>
       </select>
       <label for="select">Select Your Size</label>
       <select class="browser-default custom-select custom-select-md mb-3 name">
-        <option value="size">Small</option>
-        <option value="size">Medium</option>
-        <option value="size">Large</option>
+        <option value="small">Small  -- 450</option>
+        <option value="medium">Medium   --750</option>
+        <option value="large">Large  --1050</option>
       </select>
-
+      <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="broccolli" value="broccolli" name="toppings">
+        <label class="custom-control-label" for="broccolli">Broccolli</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="bacon" value="bacon" name="toppings">
+        <label class="custom-control-label" for="bacon">Bacon</label>
+      </div>
+      <div class="custom-control custom-checkbox custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="capers" value="capers" name="toppings">
+        <label class="custom-control-label" for="capers">Capers</label>
+      </div>
+      <button type="submit"  id="btn" class="btn btn-orange proceed">Proceed</button>
     </form>
+  </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
