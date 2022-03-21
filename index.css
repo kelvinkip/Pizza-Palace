@@ -1,0 +1,40 @@
+#bbq{
+    height: 170px;
+    width: 200px;
+}
+.container1{
+    display: flex;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 70px;
+
+}
+#cheese, #bbq, #meat{
+    margin: 65px;
+}
+#cheese{
+    height: 170px;
+    width: 200px;
+}
+#meat{
+    height: 170px;
+    width: 200px;
+}
+.container{
+    border: 3px solid black;
+    width: 100%;
+    border-radius: 15px;
+}
+#vegeterian{
+    height: 170px;
+    width: 200px;
+}
+#hawawiian{
+    height: 170px;
+    width: 200px;
+}
+#peperroni{
+    height: 170px;
+    width: 200px;
+}
