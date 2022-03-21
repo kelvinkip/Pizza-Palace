@@ -1,120 +1,17 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
   <head>
-    <title>Title</title>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="index.css">
-
-    <!-- Bootstrap CSS -->
+    <meta charset="utf-8">
+    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kaushan+Script|Oswald|Sarabun:400,600,700|Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="images/pizza-icon.png" type="img/jpg">
+    <title>Ch!</title>
   </head>
   <body>
-      <div class="homepage" class="container-fluid">
-          <img src="" alt="">
-
-      </div>
-      <div class="container1">
-      <div class="container">
-          <H2>BBQ PIZZA</H2>
-          <img id="bbq" src="pizza/bbq.jpg" alt="">
-          <p>A topping of spicy barbecue sauce, diced chicken, <br> cilantro, peppers, and onion all covered with <br> cheese and baked to bubbly goodness!</p>
-      </div>
-      <div class="container">
-        <H2>CHEESE PIZZA</H2>
-        <img id="cheese" src="pizza/Cheese-pizza-1.jpg" alt="">
-        <p>Although a Margherita pizza is technically <br> a cheese pizza, a <br> regular cheese pizza' is a more basic meal with <br> just tomato sauce topped with cheese. </p>
-    </div>
-    <div class="container">
-        <H2>MEAT PIZZA</H2>
-        <img id="meat" src="pizza/meat pizza.jpg" alt="">
-        <p>Crafted with our signature sauce and loaded <br> with real mozzarella cheese, pepperoni, sausage and beef</p>
-    </div>
-    </div>
-
-    <div class="container1">
-      <div class="container">
-          <H2>vegeterian PIZZA</H2>
-          <img id="vegeterian" src="pizza/vegeterian.jpg" alt="">
-          <p>A topping of spicy barbecue sauce, diced chicken, <br> cilantro, peppers, and onion all covered with <br> cheese and baked to bubbly goodness!</p>
-      </div>
-      <div class="container">
-        <H2>HAWAWIIAN PIZZA</H2>
-        <img id="hawawiian" src="pizza/Hawaiian-Pizza-recipe-500x500.jpg" alt="">
-        <p>Although a Margherita pizza is technically <br> a cheese pizza, a <br> regular cheese pizza' is a more basic meal with <br> just tomato sauce topped with cheese. </p>
-    </div>
-    <div class="container">
-        <H2>MEAT PIZZA</H2>
-        <img id="peperroni" src="pizza/peperroni.webp" alt="">
-        <p>Crafted with our signature sauce and loaded <br> with real mozzarella cheese, pepperoni, sausage and beef</p>
-    </div>
-    </div>
-    <p>Order pizza you like from our site and we will deliver at your doorstep</p>
-    <div class="form">
-     
-    <form id="form" >
-      <label for="select">Select Your Crust</label>
-      <select class="browser-default custom-select custom-select-md mb-3 name">
-        <option value="Crispy">Crispy --650</option>
-        <option value="Stuffed">Stuffed  --550</option>
-        <option value="Gluten-Free">Gluten-Free   --450</option>
-      </select>
-      <label for="select">Select Your Size</label>
-      <select class="browser-default custom-select custom-select-md mb-3 name">
-        <option value="small">Small  -- 450</option>
-        <option value="medium">Medium   --750</option>
-        <option value="large">Large  --1050</option>
-      </select>
-      <label for="Toppings">Select Your Toppings at sh. 50 each</label><br>
-      <div class="custom-control custom-checkbox custom-control-inline">
-        <input type="checkbox" class="custom-control-input" id="broccolli" value="broccolli" name="toppings">
-        <label class="custom-control-label" for="broccolli">Broccolli</label>
-      </div>
-      <div class="custom-control custom-checkbox custom-control-inline">
-        <input type="checkbox" class="custom-control-input" id="bacon" value="bacon" name="toppings">
-        <label class="custom-control-label" for="bacon">Bacon</label>
-      </div>
-      <div class="custom-control custom-checkbox custom-control-inline">
-        <input type="checkbox" class="custom-control-input" id="capers" value="capers" name="toppings">
-        <label class="custom-control-label" for="capers">Capers</label>
-      </div>
-      <button type="submit"  id="btn" class="btn btn-orange proceed">Proceed</button>
-    </form>
-    <div class="col-sm-7">
-      <div id="information">
-        <p>Your order will be processed and delivered within one hour of placing.</p>
-        <p>Make sure you have the total amout for the order during order delivery delivery.</p>
-        <p>Incase of any comment of complaint, Please reach out to us as fast as possible.</p>
-        <p id="regards">Regards, Management</p>
-      </div>
-  </div>
-    </div>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Order No.</th>
-          <th scope="col">Pizza Size</th>
-          <th scope="col">Toppings</th>
-          <th scope="col">Crust</th>
-          <th scope="col">Total</th>
-        </tr>
-      </thead>
-      <tbody id="pizza">
-        <tr>
-          <th scope="row">1</th>
-          <td id="size"></td>
-          <td id="toppings"></td>
-          <td id="crust"></td>
-          <td id="total"></td>
-        </tr>
-      </tbody>
-    </table>
-  
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
