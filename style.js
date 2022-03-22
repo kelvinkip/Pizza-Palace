@@ -6,7 +6,7 @@ class Pizza {
     this.toppings = toppings;
     this.quantity = quantity;
     this.delivery = delivery;
-    this.basePrice = 600;
+    this.basePrice = 0;
     }
   
     typePrice(){
@@ -80,6 +80,16 @@ class Pizza {
     }
   
   }
+  $("button#submitDeliveryForm").click(function() {
+    var userName = $("input#deliveryName").val();
+    var address = $("input#address").val();
+    var city = $("input#city").val();
+    var county = $("input#county").val();
+    $(".nameInput").text(userName);
+    $(".addressInput").text(address + ", " + city + " " + county);
+    $("form#deliveryForm").hide();
+    $("#deliveryEnd").show();
+  });
   
   
   $(document).ready(()=>{
@@ -101,8 +111,21 @@ class Pizza {
     });
   });
   
-  $(document).ready(function(){
-    $("#checkOut").onclick(function(event){
-        alert (name + ", We have received your message. Thank you for reaching out to us.");
-    });    
-  });
+//   $(document).ready(function(){
+//       var name=$("input#username").val()
+//     $("#checkOut").onclick(function(event){
+//         alert (name + ", We have received your message. Thank you for reaching out to us.");
+//     });    
+    $("form#feedbackform").submit(function(event){
+        event.preventDefault(event);
+       var name = $("input#username").val();
+       var email = $("input#inputemail").val();
+       var message = $("textarea#usermessage").val();
+
+       if ($("input#username").val() && $("input#inputemail").val()){
+       alert ("Hello  " + name + ", we have received your Message. Thank you for reaching out to us, We shall get back to you!!");
+       }
+       else {
+           alert("Please enter your name and email!");
+       }
+    });

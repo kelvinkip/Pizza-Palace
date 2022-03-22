@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta charset="utf-8">
-    <link href="bootstrap.css" rel="stylesheet" type="text/css">
+    <!-- <link href="bootstrap.css" rel="stylesheet" type="text/css"> -->
     <link href="index.css" rel="stylesheet" type="text/css">
     <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Kaushan+Script|Oswald|Sarabun:400,600,700|Shrikhand&display=swap" rel="stylesheet">
@@ -17,11 +17,10 @@
   <body>
     <nav class="navbar navbar-expand-md fixed-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapse_target">
-        <img src="images/menu-icon.png" alt="menu icon">
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <a class="navbar-brand logo"href="#"><img src="images/logo.png" alt="logo of pizza house" width="70%" ></a>
+      <a class="navbar-brand logo"href="#"></a>
       <span class="navbar-brand navbar-text"> <a href="#"></a> Pizza Palace</span>
       <div class="collapse navbar-collapse" id="collapse_target">
         <ul class="navbar-nav ml-lg-auto">
@@ -169,7 +168,7 @@
                             <option>Tripple Cheese Crust  400</option>
                             <option>Double Cheesy Crust  300</option>
                             <option>Cheesy Crust  150</option>
-                            <option>Classic Pizza Crust</option>
+                            <!-- <option>Classic Pizza Crust</option> -->
 
                           </select>
                           <select class="form-control drop" id="topping-selector" required>
@@ -237,8 +236,23 @@
                         </div>
                       </div>
                       <div class="card-footer">
-                        <button onclick="submit()" id="checkOut" class="btn reserve-btn">CHECKOUT</button>
+                        <button type="submit" id="checkOut" class="btn reserve-btn">CHECKOUT</button>
+                    
                       </div>
+                     <h2>NEED TRANSPORY</h2>
+                     <form id="deliveryForm">
+                      <div class="form-group text-light" style="width: 40%; margin-left: 30%;">
+                        <label for="name" required>Enter Name:</label>
+                        <input id="deliveryName" class="form-control" type="text">
+                        <label for="address">Enter Address:</label>
+                        <input id="address" class="form-control" type="text">
+                        <label for="city">Enter City:</label>
+                        <input id="city" class="form-control" type="text">
+                        <label for="county">Enter County:</label>
+                        <input id="county" class="form-control" type="text">
+                      </div>
+                      <button type="button" class="btn btn-success" id="submitDeliveryForm">Submit</button>
+                    </form>
                     </div>
                   </div>
     
@@ -259,19 +273,19 @@
                   <div class="col-md-5">
                     <div class="container contact-us">
                       <h1 class="wow jackInTheBox">CONTACT US</h1>
-                      <form id="feedbackForm">
+                      <form id="feedbackform">
                         <div class="form-row">
                           <div class="form-group col-md-6 wow jackInTheBox">
-                            <input type="text" class="form-control" id="userName" placeholder="Name...">
+                            <input type="text" class="form-control" id="username" placeholder="Name...">
                           </div>
                           <div class="form-group col-md-6 wow jackInTheBox">
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email...">
+                            <input type="email" class="form-control" id="inputemail" placeholder="Email...">
                           </div>
                           <div class="form-group col-md-12 wow jackInTheBox">
-                            <textarea id="userMessage" name="message" class="form-control" placeholder="Your message here..." rows="8" required="required" data-error="Please, leave us a message."></textarea>
+                            <textarea id="usermessage" name="message" class="form-control" placeholder="Your message here..." rows="8" required="required" data-error="Please, leave us a message."></textarea>
                           </div>
                           <div class="col-md-12 wow jackInTheBox" id="submit-button">
-                            <button onclick="submit()" id="submit" class="btn btn-primary">Submit</button>
+                            <button type="submit" id="submit" class="btn btn-primary">Submit</button>
                           </div>
                         </div>
                       </form>
